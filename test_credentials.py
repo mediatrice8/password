@@ -10,9 +10,14 @@ class TestCredential(unittest.TestCase):
     
     def setUp(self):
         '''
-        set up function to run beforeeache test case
+        set up function to run before each test case
         '''
         self.new_credential = Credential("Instagram","mediay37","5555")
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test has run
+        '''
+        Credential.credential_list = []
     def test_init(self):
         '''
         test to initialize the object
