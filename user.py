@@ -2,6 +2,7 @@ class User:
     '''
     A class for the users
     '''
+    user_names = []
     def __init__(self,user_name,password):
         '''
         method to initialize the object
@@ -11,4 +12,10 @@ class User:
         '''
         self.user_name=user_name
         self.password=password
-    user_names = []
+    def save_user(self):
+        '''
+        method to save the object into usernames
+        '''
+        User.user_names.append(self)
+        
+ 
