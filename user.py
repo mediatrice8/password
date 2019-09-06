@@ -18,4 +18,13 @@ class User:
         '''
         User.user_names.append(self)
         
- 
+#  ---------exit------------------------
+    @classmethod
+    def user_exist(cls,user_name):
+        '''
+        method used to check if user exit from usernames
+        '''
+        for user in cls.user_names:
+            if user.user_name == user_name:
+                return True
+        return False
