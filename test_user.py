@@ -12,3 +12,10 @@ class TestUser(unittest.TestCase):
         set up method torun before each test case.
         '''
         self.new_user = User("media","0000")
+    def  test_init(self):
+        '''
+        test_init used to test if the object is initialized well
+        '''
+        self.assertEqual(self.new_user.user_name,"media")
+        self.assertEqual(self.new_user.password,"0000")
+        
