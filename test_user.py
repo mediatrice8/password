@@ -7,3 +7,8 @@ class TestUser(unittest.TestCase):
     Args:
         unittest.TestCase: class helps to create the test of class"
     '''
+    def setUp(self):
+        '''
+        set up method torun before each test case.
+        '''
+        self.new_user = User("media","0000")
