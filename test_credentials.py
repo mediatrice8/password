@@ -45,7 +45,7 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(len(Credential.credential_list),2)
 # ---------------------------four test------------------
     def test_display_credentials(self):
-        """
+        '''
         method that returns a list of all credentials save_credential
-        """
+        '''
         self.assertEqual(Credential.display_credentials(),Credential.credential_list)
