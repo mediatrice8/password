@@ -16,7 +16,7 @@ class TestUser(unittest.TestCase):
         '''
         tearDown method to clean up after test runs
         '''
-         User.user_names=[]
+        User.user_names=[]
 #------------------first test-------------------
     def  test_init(self):
         '''
@@ -25,4 +25,10 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.user_name,"media")
         self.assertEqual(self.new_user.password,"0000")
 # -----------------second test---------------------
+    def test_save_user(self):
+        '''
+        test to see if the user name is saved into usernames
+        '''
+        self.new_user.save_user()
+        self.assertEqual(len(User.user_names),1)
         
