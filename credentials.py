@@ -16,16 +16,16 @@ class Credential:
     credential_list = []
 # ------------------------save credential---------------
     def save_credential(self):
-        """
+        '''
         save_credential method saves credential objects into the credential_list
-        """
+        '''
         Credential.credential_list.append(self)
 # -----------------------method to display---------------
     @classmethod
     def display_credentials(cls):
-        """
+        '''
         method that  returns the credential list
-        """
+        '''
         return cls.credential_list
 
 
