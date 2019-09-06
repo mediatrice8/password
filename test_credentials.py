@@ -27,6 +27,7 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(self.new_credential.account_type,"Instagram")
         self.assertEqual(self.new_credential.user_name,"mediay37")
         self.assertEqual(self.new_credential.password,"5555")
+
 #-------------------second test----------------------
     def test_save_credential(self):
         '''
@@ -49,3 +50,5 @@ class TestCredential(unittest.TestCase):
         method that returns a list of all credentials save_credential
         '''
         self.assertEqual(Credential.display_credentials(),Credential.credential_list)
+if __name__ == '__main__':
+    unittest.main()
