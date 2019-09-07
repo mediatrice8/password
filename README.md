@@ -19,5 +19,5 @@ This is the application which will be using in different various sector for crea
 ### Licence and Information
 . Email:kampiremediatrice@gmail.com
 . Mob : 0785610704
-MIT copy 2019 Mediatrice KAMPIRE
+ .MIT copy 2019 Mediatrice KAMPIRE
 free to each and every one
