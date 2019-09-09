@@ -50,5 +50,16 @@ class TestCredential(unittest.TestCase):
         method that returns a list of all credentials save_credential
         '''
         self.assertEqual(Credential.display_credentials(),Credential.credential_list)
+# -----------------------------five test-----------
+    def test_delete_credential(self):
+            '''
+            test_delete_credential to test if we can remove a credential from our credential list
+            '''
+            self.new_credential.save_credential()
+            test_credential = Credential("Facebook","eussy","457823") # new credential
+            test_credential.save_credential()
+
+            self.new_credential.delete_credential()# Deleting a credential object
+            self.assertEqual(len(Credential.credential_list),3)
 if __name__ == '__main__':
     unittest.main()
