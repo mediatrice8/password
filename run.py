@@ -38,10 +38,10 @@ def main():
     print(" Warm Welcome!")
 
 
-    print("Please enter one of the following codes to continue, cc - create user if you haven't signed up yet , log -if you already have an account and ex to exit the application ")
+    print("Please enter, cc -  to  create user account, log -if you have an account and ex - to exit the application ")
     short_code = input().lower()
 
-    if short_code == 'cs':
+    if short_code == 'cc':
         print("Create user")
         print("Username")
         user_name=input()
@@ -53,12 +53,11 @@ def main():
         print('\n')
         print(f"Log in details for {user_name}  have been saved")
         print('\n')
-
         print("Please exit the application to log in to see your credentials")
 
     elif short_code == 'log':
 
-        print("Fill in the required info")
+        print("Fill this information")
         print("Enter your user name")
         user_name=input()
         print("Enter your password")
