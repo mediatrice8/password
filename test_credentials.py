@@ -60,6 +60,6 @@ class TestCredential(unittest.TestCase):
             test_credential.save_credential()
 
             self.new_credential.delete_credential()# Deleting a credential object
-            self.assertEqual(len(Credential.credential_list),3)
+            self.assertEqual(len(Credential.credential_list),1)
 if __name__ == '__main__':
     unittest.main()
